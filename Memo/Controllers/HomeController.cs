@@ -32,5 +32,19 @@ namespace Memo.Controllers
             DateTime.Now.ToString();
             return View();
         }
+       
+            /// <summary>
+            /// 新闻列表
+            /// </summary>
+            /// <returns></returns>
+            
+            
+            public ActionResult List()
+
+        {
+            string[] data = new string[] { "超逗动物表情包 不信你不笑", "摄影师镜头下的极寒美景" };
+            ViewBag.data = data;
+            return View();
+        }
     }
 }
