@@ -39,10 +39,11 @@ namespace Memo.Controllers
             /// <returns></returns>
             
             
-            public ActionResult List()
+            public ActionResult List(int page=10)
 
         {
             string[] data = new string[] { "超逗动物表情包 不信你不笑", "摄影师镜头下的极寒美景" };
+            ViewBag.Page = page;
             ViewBag.data = data;
             return View();
         }
