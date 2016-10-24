@@ -39,6 +39,7 @@ namespace Memo.Controllers
             /// <returns></returns>
             
             
+            
             public ActionResult List(int page=10)
 
         {
@@ -47,5 +48,22 @@ namespace Memo.Controllers
             ViewBag.data = data;
             return View();
         }
+        public ActionResult add()
+        {
+            DateTime.Now.ToString();
+            return View();
+        }
+        public ActionResult Save(string title ,string content)
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        /// <summary>
+        /// 新闻列表
+        /// </summary>
+        /// <returns></returns>
+
     }
 }
