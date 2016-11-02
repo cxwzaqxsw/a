@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Memo;
 
-namespace News.Controllers
+namespace Memo.Controllers
 {
     public class BlogController : Controller
     {
@@ -22,7 +23,6 @@ namespace News.Controllers
             }
 
             ViewBag.BlogArticles  = lst.OrderByDescending(o => o.Id).ToList();
-            ViewBag.BlogArticles = lst;
 
             return View();
         }

@@ -1,4 +1,4 @@
-﻿namespace News 
+﻿namespace Memo  
 {
     using System;
     using System.Data.Entity;
