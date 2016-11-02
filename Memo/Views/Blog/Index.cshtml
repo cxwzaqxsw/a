@@ -5,6 +5,9 @@
 
 }
 <h2>博客</h2>
+<fieledset>
+    <form method="get" action="@Url.Action("index")"> 搜索：<input type="text" name="q" value="@ViewBag.q"/> <input type="submit" name="q" value="搜索" /></form>
+</fieledset>
 <ol>
     @foreach (var item in articles)
     {
